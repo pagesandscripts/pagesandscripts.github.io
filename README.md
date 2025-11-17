@@ -1,13 +1,20 @@
 # pagesandscripts.github.io
 
-Static short story site served via GitHub Pages.
+Static short story site served via GitHub Pages. The landing page showcases bilingual content: a hero illustration followed by dual story lists (English and Persian) so visitors can drop straight into either language.
 
 ## Structure
 
-- `index.html` – Landing page with featured art and story listings.
-- `assets/css/` – Shared styles (`main.css`).
-- `assets/images/` – Global art and photography used across the site.
-- `assets/images/stories/` – Optional shared art for multiple stories.
-- `stories/<story-name>/` – Individual story folders containing `index.html`, optional `custom.css`, and story-specific media.
+- `index.html` – Root landing page with hero image and side-by-side English/Persian story lists (stacks on mobile).
+- `en/index.html` / `fa/index.html` – Optional deeper landing pages for each language if you want longer descriptions.
+- `assets/css/` – Shared styling (`main.css`) plus RTL overrides (`rtl.css`) loaded by Persian pages.
+- `assets/images/` – Global art (subfolders for `cover/`, `shared/`, and optional per-language imagery under `en/` and `fa/`).
+- `assets/fonts/` – Custom typefaces grouped by language as needed.
+- `en/stories/<slug>/` and `fa/stories/<slug>/` – Paired story folders. Each contains `index.html`, optional `custom.css`, and a local `images/` directory. Keep slugs identical across languages so cross-links stay predictable.
 
-Copy the `stories/story-template/` folder to create new stories without rebuilding the layout each time.
+Copy the `en/stories/story-template/` and `fa/stories/story-template/` folders when drafting new stories. Update both language versions together so the landing page lists stay in sync.
+
+## Authoring notes
+
+- Keep every HTML or CSS file under ~400 lines for readability; split large pages into partials or shared assets if needed.
+- Reference the shared cover art (`assets/images/cover/watercolor_black_horse.avif`) from the landing page hero.
+- Add “Read in English/Persian” cross-links between translated stories to help readers switch languages mid-story.

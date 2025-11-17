@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="title desc">
+  <title id="title">Story thumbnail placeholder</title>
+  <desc id="desc">Minimal placeholder artwork used until a story-specific image is added.</desc>
+  <defs>
+    <linearGradient id="gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1d2a44" />
+      <stop offset="100%" stop-color="#0b1528" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#gradient)" rx="24" ry="24" />
+  <g fill="none" stroke="#3db9ff" stroke-width="8" stroke-linecap="round" opacity="0.55">
+    <path d="M110 260h380" />
+    <path d="M160 210h280" />
+    <path d="M210 160h180" />
+    <path d="M260 110h80" />
+  </g>
+  <text x="50%" y="65%" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="36" fill="#c9d8f8" letter-spacing="4">PLACEHOLDER</text>
+</svg>

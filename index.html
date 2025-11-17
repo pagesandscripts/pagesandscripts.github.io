@@ -3,37 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pages &amp; Scripts</title>
+  <meta name="description" content="Bilingual short stories by pagesandscripts, presented in English and Persian." />
+  <title>Pages &amp; Scripts · Bilingual Short Stories</title>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <a class="brand" href="index.html">Pages &amp; Scripts</a>
-      <a class="nav-link" href="#stories">Stories</a>
-    </nav>
-    <section class="hero">
-      <img class="hero-image" src="assets/images/cover-placeholder.jpg" alt="Featured story artwork placeholder">
-      <div class="hero-copy">
-        <h1>Short Stories &amp; Microfiction</h1>
-        <p>Curated tales and fleeting worlds crafted by pagesandscripts.</p>
-        <a class="cta" href="#stories">Start reading</a>
+  <header class="landing-header">
+    <div class="hero" role="banner">
+      <div class="hero-media">
+        <img src="assets/images/cover/watercolor_black_horse.avif" alt="Ink-style illustration of a black horse in motion" loading="eager">
       </div>
-    </section>
+      <div class="hero-overlay">
+        <p class="eyebrow">pagesandscripts presents</p>
+        <h1>Stories in Two Voices</h1>
+        <p class="hero-description">Discover short fiction crafted in English and Persian—written to be read on any device.</p>
+        <div class="language-switch" role="navigation" aria-label="Language selection">
+          <a class="lang-link" href="en/index.html">Read in English</a>
+          <a class="lang-link" href="fa/index.html" lang="fa" dir="rtl">مطالعه به فارسی</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section id="stories" class="story-list">
-      <h2>Stories</h2>
-      <ul>
-        <li>
-          <a class="story-card" href="stories/story-template/index.html">
-            <h3>Story Title Placeholder</h3>
-            <p>One-line hook introducing the story.</p>
-            <span class="story-meta">5 minute read · Speculative fiction</span>
-          </a>
-        </li>
-      </ul>
+    <section id="stories" class="dual-list" aria-label="Story collections by language">
+      <div class="story-column">
+        <h2>English Stories</h2>
+        <ul class="story-links">
+          <li>
+            <a href="en/stories/story-template/index.html">
+              <span class="story-title">Story Title Placeholder</span>
+              <span class="story-meta">Coming soon</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="story-column" lang="fa" dir="rtl">
+        <h2>داستان‌های فارسی</h2>
+        <ul class="story-links">
+          <li>
+            <a href="fa/stories/story-template/index.html">
+              <span class="story-title">عنوان داستان نمونه</span>
+              <span class="story-meta">به زودی</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
