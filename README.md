@@ -18,3 +18,4 @@ Copy the `en/stories/story-template/` and `fa/stories/story-template/` folders w
 - Keep every HTML or CSS file under ~400 lines for readability; split large pages into partials or shared assets if needed.
 - Reference the shared cover art (`assets/images/cover/watercolor_black_horse.avif`) from the landing page hero.
 - Add “Read in English/Persian” cross-links between translated stories to help readers switch languages mid-story.
+- Generate a local preview of the landing page with `powershell -File tools/generate-local-preview.ps1`; this writes `local-preview.html` (ignored by git) for quick browser inspection.

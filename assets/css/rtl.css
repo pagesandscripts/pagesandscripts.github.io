@@ -39,6 +39,3 @@
   flex-direction: row-reverse;
 }
 
-[dir="rtl"] .dual-list {
-  direction: rtl;
-}
