@@ -70,7 +70,6 @@ def main():
         en_content = en_template
         en_content = en_content.replace('{{TITLE}}', story['en']['title'])
         en_content = en_content.replace('{{SLUG}}', slug)
-        en_content = en_content.replace('{{FA_TITLE}}', story['fa']['title'])
         en_content = en_content.replace('{{CONTENT}}', story['en']['content'])
         
         # Generate navigation links
@@ -105,7 +104,6 @@ def main():
         fa_content = fa_template
         fa_content = fa_content.replace('{{TITLE}}', story['fa']['title'])
         fa_content = fa_content.replace('{{SLUG}}', slug)
-        fa_content = fa_content.replace('{{EN_TITLE}}', story['en']['title'])
         fa_content = fa_content.replace('{{CONTENT}}', story['fa']['content'])
         
         # Generate navigation links for Persian
