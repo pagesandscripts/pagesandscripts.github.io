@@ -15,3 +15,4 @@ v1.22.0: fix breadcrumb navigation to point to main index page
 v1.23.0: moved stories-data.json to docs folder and removed subtitle, genre, and readingTime metadata fields from story structure
 v1.24.0: removed translation metadata links and footer navigation from story pages
 v1.25.0: improved story page typography with centered title, 65ch max-width, justified text, and responsive font sizing
+v1.26.0: fixed story page CSS asset paths; centered header/breadcrumb; set story width to 60ch and removed story content background

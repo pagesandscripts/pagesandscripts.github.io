@@ -224,6 +224,10 @@ main {
   text-align: center;
 }
 
+[dir="rtl"] .story-header {
+  text-align: center;
+}
+
 .breadcrumb {
   display: flex;
   gap: 0.5rem;
@@ -237,6 +241,10 @@ main {
 .story-header h1 {
   font-size: clamp(2rem, 5vw, 2.75rem);
   margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+[dir="rtl"] .story-header h1 {
   text-align: center;
 }
 
@@ -255,12 +263,14 @@ main {
 }
 
 .story-content {
-  max-width: 65ch;
+  max-width: 60ch;
   margin: 0 auto 3rem;
   padding: 2.5rem 2rem;
   font-size: 16px;
   line-height: 1.6;
   text-align: justify;
+  background: transparent;
+  border-radius: 0;
 }
 
 .story-content p {
