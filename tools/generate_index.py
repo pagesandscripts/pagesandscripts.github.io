@@ -38,31 +38,44 @@ def main():
     # Generate story lists
     en_list_items = []
     fa_list_items = []
-    
+    mobile_list_items = []
+
     for story in story_data['stories']:
         slug = story['slug']
-        
+
         en_item = f"""          <li>
-            <a href="en/stories/{slug}/index.html">
-              <span>{story['en']['title']}</span>
-            </a>
-          </li>"""
-        
+                        <a href="en/stories/{slug}/index.html">
+                            <span>{story['en']['title']}</span>
+                        </a>
+                    </li>"""
+
         fa_item = f"""          <li>
-            <a href="fa/stories/{slug}/index.html">
-              <span>{story['fa']['title']}</span>
-            </a>
-          </li>"""
-        
+                        <a href="fa/stories/{slug}/index.html">
+                            <span>{story['fa']['title']}</span>
+                        </a>
+                    </li>"""
+
+        mobile_item = f"""          <li class="story-index__mobile-item">
+                        <a class="story-index__mobile-en" href="en/stories/{slug}/index.html" lang="en" dir="ltr">
+                            <span>{story['en']['title']}</span>
+                        </a>
+                        <a class="story-index__mobile-fa" href="fa/stories/{slug}/index.html" lang="fa" dir="rtl">
+                            <span>{story['fa']['title']}</span>
+                        </a>
+                    </li>"""
+
         en_list_items.append(en_item)
         fa_list_items.append(fa_item)
+        mobile_list_items.append(mobile_item)
     
     en_list = '\n'.join(en_list_items)
     fa_list = '\n'.join(fa_list_items)
+    mobile_list = '\n'.join(mobile_list_items)
     
     # Replace placeholders in template
     index_content = template.replace('{{EN_STORY_LIST}}', en_list)
     index_content = index_content.replace('{{FA_STORY_LIST}}', fa_list)
+    index_content = index_content.replace('{{MOBILE_STORY_LIST}}', mobile_list)
     
     # Write index.html with proper UTF-8 encoding
     with open(output_path, 'w', encoding='utf-8', newline='\n') as f:
