@@ -65,7 +65,8 @@ $indexContent = $template -replace '{{EN_STORY_LIST}}', $enList
 $indexContent = $indexContent -replace '{{FA_STORY_LIST}}', $faList
 
 # Write index.html
-Set-Content -Path $outputPath -Value $indexContent -Encoding UTF8
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+[System.IO.File]::WriteAllText($outputPath, $indexContent, $utf8NoBom)
 
 $count = $storyData.stories.Count
 Write-Host "`nSuccessfully generated index.html with $count stories!" -ForegroundColor Green

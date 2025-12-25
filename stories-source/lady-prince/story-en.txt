@@ -1,8 +1,5 @@
 ---
 title: Lady Prince
-subtitle: A fairy-tale vignette about courage that refuses to fit a title.
-genre: Fantasy
-reading-time: 6 min
 ---
 
 The court liked naming people more than listening to them. So when the firstborn daughter stepped into the hall wearing a suit of paper armor, the scribes dipped their quills and wrote *Prince* before she could say a word.

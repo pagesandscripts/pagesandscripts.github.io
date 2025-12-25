@@ -85,7 +85,7 @@ start docs\index.html
 **Quick one-liner (recommended):**
 
 ```powershell
-.\tools\build-stories.ps1; git add .; git checkout -b v1.18.0; git commit -m "added - before story names in the main page"; git push -u origin v1.18.0; git checkout main; git merge v1.18.0; git push origin main
+.\tools\build-stories.ps1; git add .; git checkout -b v1.19.0; git commit -m "fix: resolve UTF-8 encoding issue causing Persian title corruption"; git push -u origin v1.19.0; git checkout main; git merge v1.19.0; git push origin main
 ```
 
 This command: builds → creates feature branch → commits → pushes branch → merges to main → deploys
