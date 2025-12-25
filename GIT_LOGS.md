@@ -10,6 +10,6 @@ git add .; git checkout -b v1.20.0; git commit -m "your change description"; git
 
 ## Version History
 
-v1.21.0: removed language-specific index pages (en/index.html and fa/index.html) and simplified story metadata to only include title
-v1.18.0: added - before story names in the main page
-v1.15.0: adding structure to the website for future stories to have the same template for each subpage
+v1.21.0: removed language-specific index pages (en/index.html and fa/index.html) and simplified 
+v1.22.0: fix breadcrumb navigation to point to main index page
+v1.23.0: moved stories-data.json to docs folder and removed subtitle, genre, and readingTime metadata fields from story structure

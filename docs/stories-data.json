@@ -4,16 +4,10 @@
       "slug": "lady-prince",
       "en": {
         "title": "Lady Prince",
-        "subtitle": "",
-        "genre": "Fiction",
-        "readingTime": "5 min",
         "content": "<p>The court liked naming people more than listening to them. So when the firstborn daughter stepped into the hall wearing a suit of paper armor, the scribes dipped their quills and wrote <em>Prince</em> before she could say a word.</p>\n\n<p>She kept the title, but not the armor. The paper only held up for three breaths against the rain and the dragons everyone swore had gone extinct. Still, it was enough time to make eye contact with the creature clinging to the parapet and promise they would both leave the mountain alive.</p>\n\n<p>Legends claim she slew the beast. The truth is quieter: she listened to the dragon describe the ache in its wings, the chasm between what it wanted and the role it was assigned. They traded names, traded expectations, and burned the court records together.</p>\n\n<p>When she returned, a soot stain across her cheek and a dragon shadow gliding overhead, the heralds stammered between <em>lady</em> and <em>prince</em>. She let them argue. Her kingdom had already started rewriting itself.</p>"
       },
       "fa": {
         "title": "شاهزاده خانم",
-        "subtitle": "",
-        "genre": "داستان",
-        "readingTime": "۵ دقیقه",
         "content": "<p>دربار بیش از آن‌که شنونده باشد عاشق نام‌گذاری بود. پس وقتی دختر نخستین با زرهی از کاغذ وارد تالار شد، دبیران قلم‌ها را در مرکب زدند و پیش از آن‌که لب باز کند، واژهٔ «شاهزاده» را در کنار نامش نوشتند.</p>\n\n<p>او لقب را نگه داشت اما زره را نه. زرهٔ کاغذی تنها سه نفس در برابر باران و اژدهایی که همه می‌گفتند نسلش منقرض شده دوام آورد. همین سه نفس کافی بود تا با موجودی که به دیوارهٔ قلعه چنگ زده بود هم‌چشم شود و قول بدهد هر دو از کوه زنده پایین بیایند.</p>\n\n<p>افسانه‌ها می‌گویند اژدها را کشت. حقیقت آرام‌تر است: به درد بال‌های اژدها گوش داد، به فاصله‌ای که میان خواسته و نقشی که به او تحمیل شده بود افتاده بود. نام‌ها را عوض کردند، انتظارها را آتش زدند و دفترهای دیوانی را با هم سوزاندند.</p>\n\n<p>وقتی برگشت، لکه‌ای از دوده بر گونه و سایهٔ اژدهایی در آسمان، نقالان بین «شاهزاده» و «خانم» گیر کرده بودند. او گذاشت بحث کنند. پادشاهی‌اش از پیش شروع به بازنویسی خود کرده بود.</p>"
       }
     },
@@ -21,22 +15,16 @@
       "slug": "the-trial",
       "en": {
         "title": "The Trial",
-        "subtitle": "",
-        "genre": "Fiction",
-        "readingTime": "5 min",
         "content": "<p>Add your story content here...</p>\n\n<p>Write paragraphs separated by blank lines.</p>\n\n<p>Use <em>italics</em> for emphasis.</p>"
       },
       "fa": {
         "title": "محاکمه",
-        "subtitle": "",
-        "genre": "داستان",
-        "readingTime": "۵ دقیقه",
         "content": "<p>متن داستان را اینجا بنویسید...</p>\n\n<p>پاراگراف‌ها را با یک خط خالی از هم جدا کنید.</p>\n\n<p>از <em>ایتالیک</em> برای تأکید استفاده کنید.</p>"
       }
     }
   ],
   "metadata": {
-    "generatedAt": "2025-12-25T13:58:15.032633",
+    "generatedAt": "2025-12-25T14:09:16.741235",
     "storyCount": 2
   }
 }

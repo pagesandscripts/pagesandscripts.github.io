@@ -14,7 +14,7 @@ def main():
     repo_root = script_dir.parent
     output_root = repo_root / "docs"
     
-    data_path = repo_root / "stories-data.json"
+    data_path = repo_root / "docs" / "stories-data.json"
     template_dir = repo_root / "templates"
     
     # Load story data
@@ -22,7 +22,7 @@ def main():
         print(f"Error: Story data file not found: {data_path}")
         return 1
     
-    print("Loading story data from stories-data.json...")
+    print("Loading story data from docs/stories-data.json...")
     with open(data_path, 'r', encoding='utf-8') as f:
         story_data = json.load(f)
     
@@ -69,9 +69,6 @@ def main():
         # Replace placeholders for English
         en_content = en_template
         en_content = en_content.replace('{{TITLE}}', story['en']['title'])
-        en_content = en_content.replace('{{SUBTITLE}}', story['en']['subtitle'])
-        en_content = en_content.replace('{{GENRE}}', story['en']['genre'])
-        en_content = en_content.replace('{{READING_TIME}}', story['en']['readingTime'])
         en_content = en_content.replace('{{SLUG}}', slug)
         en_content = en_content.replace('{{FA_TITLE}}', story['fa']['title'])
         en_content = en_content.replace('{{CONTENT}}', story['en']['content'])
@@ -107,9 +104,6 @@ def main():
         # Replace placeholders for Persian
         fa_content = fa_template
         fa_content = fa_content.replace('{{TITLE}}', story['fa']['title'])
-        fa_content = fa_content.replace('{{SUBTITLE}}', story['fa']['subtitle'])
-        fa_content = fa_content.replace('{{GENRE}}', story['fa']['genre'])
-        fa_content = fa_content.replace('{{READING_TIME}}', story['fa']['readingTime'])
         fa_content = fa_content.replace('{{SLUG}}', slug)
         fa_content = fa_content.replace('{{EN_TITLE}}', story['en']['title'])
         fa_content = fa_content.replace('{{CONTENT}}', story['fa']['content'])

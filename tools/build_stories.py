@@ -94,16 +94,10 @@ def main():
                 "slug": slug,
                 "en": {
                     "title": en_data.get('title', 'Untitled'),
-                    "subtitle": en_data.get('subtitle', ''),
-                    "genre": en_data.get('genre', 'Fiction'),
-                    "readingTime": en_data.get('reading-time', '5 min'),
                     "content": en_data['content']
                 },
                 "fa": {
                     "title": fa_data.get('title', 'بدون عنوان'),
-                    "subtitle": fa_data.get('subtitle', ''),
-                    "genre": fa_data.get('genre', 'داستان'),
-                    "readingTime": fa_data.get('reading-time', '۵ دقیقه'),
                     "content": fa_data['content']
                 }
             }
@@ -128,11 +122,11 @@ def main():
         }
     }
     
-    json_path = repo_root / "stories-data.json"
+    json_path = repo_root / "docs" / "stories-data.json"
     with open(json_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(story_data, f, ensure_ascii=False, indent=2)
     
-    print(f"\n✓ Generated stories-data.json with {len(stories)} stories")
+    print(f"\n✓ Generated docs/stories-data.json with {len(stories)} stories")
     
     # Now run the story and index generators
     print("\n" + "=" * 60)

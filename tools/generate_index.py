@@ -14,7 +14,7 @@ def main():
     repo_root = script_dir.parent
     output_root = repo_root / "docs"
     
-    data_path = repo_root / "stories-data.json"
+    data_path = repo_root / "docs" / "stories-data.json"
     template_path = repo_root / "templates" / "index-template.html"
     output_path = output_root / "index.html"
     
@@ -23,7 +23,7 @@ def main():
         print(f"Error: Story data file not found: {data_path}")
         return 1
     
-    print(f"Loading story data from stories-data.json...")
+    print(f"Loading story data from docs/stories-data.json...")
     with open(data_path, 'r', encoding='utf-8') as f:
         story_data = json.load(f)
     
