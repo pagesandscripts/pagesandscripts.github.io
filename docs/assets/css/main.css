@@ -212,7 +212,6 @@ main {
 }
 
 .story-page .story-header,
-.story-page .story-content,
 .story-page .story-footer {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -236,6 +235,7 @@ main {
 .story-header h1 {
   font-size: clamp(2rem, 5vw, 2.75rem);
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .story-subtitle {
@@ -253,12 +253,16 @@ main {
 }
 
 .story-content {
-  background: var(--surface);
+  max-width: 65ch;
+  margin: 0 auto 3rem;
   padding: 2.5rem 2rem;
-  border-radius: 1rem;
-  display: grid;
-  gap: 1.25rem;
-  margin-bottom: 3rem;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.story-content p {
+  margin: 0 0 1em;
 }
 
 .story-footer {
@@ -298,5 +302,18 @@ main {
 
   .story-collection {
     margin: 0 auto;
+  }
+
+  .story-content {
+    padding: 1rem 1.25rem;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 900px) {
+  .story-content {
+    font-size: 19px;
+    line-height: 1.7;
   }
 }
