@@ -218,6 +218,11 @@ main {
   padding: 0 1.5rem;
 }
 
+/* Keep story header aligned with the reading column. */
+.story-page .story-header {
+  max-width: 60ch;
+}
+
 .story-header {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -269,8 +274,11 @@ main {
   font-size: 16px;
   line-height: 1.6;
   text-align: justify;
-  background: transparent;
+  background: none;
+  background-color: transparent;
   border-radius: 0;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .story-content p {
@@ -320,6 +328,11 @@ main {
     padding: 1rem 1.25rem;
     font-size: 16px;
     line-height: 1.6;
+  }
+
+  .story-page .story-header,
+  .story-page .story-footer {
+    padding: 0 1.25rem;
   }
 }
 
