@@ -24,3 +24,4 @@ v1.31.0: migrated story sources from .txt to .md and updated build script to rea
 v1.32.0: regenerated docs output so "The Corpse / جنازه" appears on the main page and story pages are rebuilt from updated sources
 v1.33.0: added new story folders for "Nabekar / نابکار", "Destiny / سزنوشت", and "Manuscripts / دست نوشته ها"
 v1.34.0: build_stories now discovers stories recursively so all story folders automatically appear on the main page when running tools/build_stories.py
+v1.35.0: moved stories-order.txt into docs/ and updated build_stories to read/write docs/stories-order.txt (auto-appends new stories; legacy fallback supported)

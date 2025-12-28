@@ -1,0 +1,14 @@
+# Story order for the main page + prev/next navigation
+# One slug per line.
+# Slug = folder name under stories-source/, or nested folders joined with '-'
+# Examples:
+#   lady-prince
+#   the-corpse
+#   some-folder-subfolder
+
+lady-prince
+the-trial
+the-corpse
+destiny
+nabekar
+manuscripts
